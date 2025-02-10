@@ -3,5 +3,5 @@ package com.example.myapp.api;
 public interface TtitCallback {
     void onSuccess(String res);
 
-    void onFailure(String e);
+    void onFailure(Exception e);
 }
