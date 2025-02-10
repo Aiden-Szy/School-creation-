@@ -11,13 +11,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.myapp.R;
 import com.example.myapp.activity.BaseActivity;
 import com.example.myapp.activity.LoginActivity;
 import com.example.myapp.activity.RegisterActivity;
 
-public class MainActivity extends BaseActivity {
+public abstract class MainActivity extends BaseActivity {
 
-    private Button btnLogin;
     private Button btnRegister;
     //声明用于登录和注册的按钮
 
@@ -27,7 +27,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);//设置布局文件
 
         //登录按钮初始化及点击事件处理
-        btnLogin=findViewById(R.id.btn_login);//获取布局中的登录按钮
+        Button btnLogin = findViewById(R.id.btn_login);//获取布局中的登录按钮
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,4 +49,3 @@ public class MainActivity extends BaseActivity {
 
     }
 }
-//
